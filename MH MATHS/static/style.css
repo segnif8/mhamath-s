@@ -1,0 +1,72 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    color: #333;
+    transition: all 0.3s ease;
+}
+body.dark-mode {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #fff;
+}
+.navbar {
+    background: rgba(44, 62, 80, 0.95);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+}
+.navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.nav-link:hover {
+    color: #a1c4fd !important;
+}
+.card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.dark-mode .card {
+    background: #34495e;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+.btn-primary {
+    background: #6c5ce7;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+.btn-primary:hover {
+    background: #5a4bcf;
+}
+.btn-outline-light {
+    border-radius: 25px;
+    padding: 8px 20px;
+}
+.progress-bar {
+    background: #00b894;
+    border-radius: 10px;
+}
+.badge {
+    background: #e84393;
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    margin: 0 5px;
+}
+.form-control {
+    border-radius: 10px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
+}
+.alert {
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
