@@ -41,12 +41,10 @@ class Answer(db.Model):
 
 # Create default teachers
 def create_default_teachers():
-    # First teacher: admin/segni
     admin = User.query.filter_by(username='admin').first()
     if not admin:
         admin = User(name='Administrator', username='admin', password='segni', is_teacher=True)
         db.session.add(admin)
-    # Second teacher: segni/admin
     segni = User.query.filter_by(username='segni').first()
     if not segni:
         segni = User(name='Segni Teacher', username='segni', password='admin', is_teacher=True)
